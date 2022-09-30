@@ -1,0 +1,27 @@
+#!/bin/bash
+
+pos=0
+neg=0
+zeros=0
+
+for i in $*
+
+do 
+
+if [ $i -lt 0 ]
+then let "neg = neg + 1"
+
+elif [ $i -eq 0 ] 
+then let "zeros = zeros + 1"
+
+else
+let "pos = pos + 1"
+
+fi 
+done
+
+echo "existem $pos numeros positivos"
+echo "existem $neg numeros negativos"
+echo "existem $zeros zeros"
+
+
