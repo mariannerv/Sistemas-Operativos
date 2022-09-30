@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+	then echo "Erro: falta um argumento"
+	exit
+fi
+soma=0
+for i in $*
+do
+	let "soma = soma + $i"
+done
+	echo "Soma: $soma"
