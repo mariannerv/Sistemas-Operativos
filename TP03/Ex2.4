@@ -1,0 +1,10 @@
+
+for j in $*; do
+	X=`find $j -name ficha* -printf "%s "`
+	soma=0
+	for i in $X;
+	do
+		let "soma = soma + $i"
+	done
+done
+echo "Soma: $soma"
