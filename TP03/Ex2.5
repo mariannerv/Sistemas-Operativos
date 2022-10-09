@@ -1,0 +1,10 @@
+for j in $*; do
+	X=`find $j -name ficha* -printf "%s "`
+	
+	for i in $X;
+	do
+		soma=0
+		let "soma = soma + $i"
+	done
+done
+echo "Tamanho total $*: $soma"
