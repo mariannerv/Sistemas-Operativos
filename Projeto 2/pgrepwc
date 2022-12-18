@@ -1,0 +1,3 @@
+#!/bin/bash
+PYTHON="python3"
+${PYTHON} pgrepwc_processos.py $@

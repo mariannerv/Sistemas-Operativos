@@ -1,0 +1,4 @@
+#!/bin/bash
+PYTHON="python3"
+for ARG in "$@"; do test "$ARG" == "-t" && ${PYTHON} pgrepwc_threads.py $@ && exit; done
+${PYTHON} pgrepwc_processos.py $@
